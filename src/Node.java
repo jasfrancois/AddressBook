@@ -2,7 +2,7 @@
 public class Node {
 	
 	//declare variables
-	Contact data;
+	Contact contact;
 	Node next;
 
 	//default constructor
@@ -11,14 +11,14 @@ public class Node {
 	}
 	
 	//node constructor
-	public Node(Contact data, Node next) {
-		this.data = data;
+	public Node(Contact contact, Node next) {
+		this.contact = contact;
 		this.next = next;
 	}
 
 	//getters
-	public Contact getData() {
-		return data;
+	public Contact getContact() {
+		return contact;
 	}
 	
 	public Node getNext() {
@@ -26,11 +26,12 @@ public class Node {
 	}
 	
 	//setters
-	public void setData(Contact data) {
-		this.data = data;
+	public void setContact(Contact contact) {
+		this.contact = contact;
 	}
 
 	public void setNext(Node next) {
 		this.next = next;
 	}
+
 }
