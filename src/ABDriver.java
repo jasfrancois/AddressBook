@@ -8,7 +8,7 @@
 public class ABDriver {
 
 	public static void main(String[] args) {
-		// create new address book
+		// create new Address book
 		AddressBook newBook = new AddressBook();
 
 		// insert completely new contacts
@@ -56,6 +56,7 @@ public class ABDriver {
 		// sort contacts and display them
 		newBook.sort();
 		newBook.display();
+
 	}
 
 }

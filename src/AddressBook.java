@@ -240,18 +240,24 @@ public class AddressBook {
 			if (leftName.compareTo(rightName) < 0) {
 				result = left;
 				left = left.getNext();
-			} else if (leftName.compareTo(rightName) > 0) {
+			} 
+			else if (leftName.compareTo(rightName) > 0) {
 				if (result == null) {
 					head = right;
 					right = right.getNext();
 					head.next = left;
 					result = head;
-				} else {
+				} 
+				else {
 					result.next = right;
 					right = right.getNext();
 					result.next.next = left;
 					result = result.next;
 				}
+			}
+			else {
+				System.out.println("error during sort");
+				return null;
 			}
 		}
 		if (right != null) {
